@@ -1,0 +1,125 @@
+body {
+    background-image: url("table_background.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: monospace;
+    font-size: 2em;
+    color: beige;
+}
+
+#game-container {
+    margin: 30px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    margin: 15px;
+}
+
+#board > div {
+    border-width: 4px;
+    border-style: outset;
+    border-color: #303030;
+    border-radius: 5px;
+}
+
+#player-container, #next-container {
+    width: 200px;
+    height: 600px;
+    margin: 15px;
+    background-color: rgba(40,55,70,0.5);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+#control-container{
+
+    width: 700px;
+    height: 100px;
+    margin: auto;
+    background-color: rgba(40,55,70,0.5);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+#control-container > div {
+    background-color: rgba(40,55,70,0.8);
+    margin: 15px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 140px;
+    text-align: center;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    border-radius: 30px;
+    background-color: rgba(60,60,60,0.6);
+}
+
+.popup input, button, a {
+    width: 100%;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(190,255,169,0.80);
+    color: black;
+    font: inherit;
+    text-align: center;
+}
+
+.popup button:hover {
+    background-color: rgba(190,255,169,1);
+}
+
+.popup input:focus {
+    border: none;
+    outline: none;
+}
+
+.next-element {
+    display: grid;
+    gap: 1px;
+    padding: 1px;
+}
+
+.next {
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.value{
+    color: aquamarine;
+    font-weight: bold;
+    font-style: italic;
+}
